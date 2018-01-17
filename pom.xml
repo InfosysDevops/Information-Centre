@@ -57,22 +57,17 @@
 	      </plugin>
       </plugins>
   </build>
-	
-    <repositories>
-    <repository>
-      <id>maven-group</id>
-      <url>http://54.213.233.74:8081/repository/maven-group/</url>
-    </repository>
-  </repositories>
-	
+  
   <distributionManagement>
+  <repository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://your.server.com:8082/nexus/content/repositories/releases/</url>
+  </repository>
   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://54.213.233.74:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>nexus-releases</id>
-      <url>http://54.213.233.74:8081/repository/maven-releases/</url>
-    </repository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://your.server.com:8082/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
 </distributionManagement>
 </project>
