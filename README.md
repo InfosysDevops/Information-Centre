@@ -1,3 +1,3 @@
 # Information-Centre
 
-Contains a demo webapp
+Contains a demo webapp for VF
